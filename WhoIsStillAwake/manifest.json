@@ -1,0 +1,12 @@
+{
+    "Name": "WhoIsStillAwake",
+    "Author": "The Fluffy Robot",
+    "Version": "1.0.0-rc.1",
+    "Description": "Shows which farmers are or are not in bed after the configured time.",
+    "UniqueID": "TheFluffyRobot.WhoIsStillAwake",
+    "EntryDll": "WhoIsStillAwake.dll",
+    "MinimumApiVersion": "3.0.0",
+    "UpdateKeys": [
+        "GitHub:jamespfluger/Stardew-WhoIsStillAwake"
+    ]
+}

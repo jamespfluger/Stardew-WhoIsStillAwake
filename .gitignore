@@ -1,0 +1,5 @@
+﻿.vs
+packages
+*.csproj.user
+WhoIsStillAwake/bin
+WhoIsStillAwake/obj
