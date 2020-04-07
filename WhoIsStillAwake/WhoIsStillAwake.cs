@@ -58,6 +58,8 @@ namespace WhoIsStillAwakeMod
             {
                 Helper.Events.GameLoop.TimeChanged -= OnTimeChangedHandler;
                 Helper.Events.Display.Rendered -= OnRenderedHandler;
+
+                hasAddedRenderedEvent = false;
             }
         }
 
@@ -71,10 +73,10 @@ namespace WhoIsStillAwakeMod
 
             if (!hasAddedRenderedEvent)
             {
-                Helper.Events.Display.Rendered += OnRenderedHandler;
-                hasAddedRenderedEvent = true;
-
                 Helper.Events.GameLoop.TimeChanged -= OnTimeChangedHandler;
+                Helper.Events.Display.Rendered += OnRenderedHandler;
+
+                hasAddedRenderedEvent = true;
             }
         }
 
